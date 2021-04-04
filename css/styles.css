@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+/* general sections */
+.container-fluid {
+  padding: 7% 15%;
+}
+.colored {
+  background-color: #ff4c68;
+  color: white;
+}
+.white {
+  background-color: white;
+}
+
+/* headings */
+.big-heading {
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* title section */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+.title-img {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+  z-index: 1;
+}
+
+/* download buttons */
+.download {
+  margin: 8% 3% 0 0;
+}
+
+/* navbar section */
+.navbar {
+  padding: 0 0 4rem 0;
+}
+.navbar-brand {
+  font-family: "Barlow", sans-serif;
+  font-size: 2.5rem;
+}
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+/* features section */
+#features {
+  position: relative;
+  margin: 0; /* gets rid of the default margin from .row */
+}
+.feature-box {
+    padding: 0 5%;
+}
+.feature-box > p {
+  color: #8f8f8f;
+}
+i.fas {
+  padding-bottom: 5%;
+  color: #ef8172;
+}
+i.fas:hover {
+    color: #ff4c68;
+}
+
+/* testimonials section */
+#testimonials {
+  background-color: #ef8172;
+}
+#testimonials > h2 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.testimonial-img {
+  width: 10%;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+/* press section */
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 2%;
+}
+.press-logo {
+  width: 15%;
+  margin: 2% 1%;
+}
+
+/* pricing section */
+#pricing {
+  padding: 10%;
+}
+.pricing-column {
+  padding: 3% 2%;
+}
+
+
+/* call to action (cta) section */
+
+
+/* footer */
+#footer {
+  color: gray;
+}
+i.footer-fab {
+  padding: 0 1%;
+  color: #333;
+  font-size: 1.2rem;
+}
+i.footer-fab:hover {
+  color: #ff4c68;
+  cursor: pointer;
+}
+
+
+/* media queries */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .title-img {
+    position: static;
+    transform: rotate(0);
+    padding-top: 5%;
+  }
+}
+
+@media (min-width: 1295px) {
+  .title-img {
+    width: 50%;
+  }
+}
